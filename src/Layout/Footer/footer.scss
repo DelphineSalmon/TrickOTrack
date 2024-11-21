@@ -1,0 +1,34 @@
+@import '../../Scss/utils/variable';
+@import '../../Scss/utils/mixin';
+
+.footer {
+    background-color: $color-beige;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    @include media-max(425px) {
+        overflow-x: hidden;
+    }
+}
+.footerlogo {
+    padding-top: 20px;
+    width: 10%;
+    @include media-max(425px) {
+        width: 30%;
+    }
+}
+
+.copyright {
+    font-family: $police;
+    font-size: 10px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: center;
+    @include media-max(425px) {
+        font-size: 8px;
+    }
+}
+.copyfooter {
+    padding-bottom: 20px;
+}

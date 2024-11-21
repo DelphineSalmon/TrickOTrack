@@ -1,0 +1,60 @@
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable.scss';
+
+
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable.scss';
+.navbar {
+    background-color: $color-beige;
+    display: flex;
+    justify-content: center;
+    @include media-max(1024px) {
+        height: 85px;
+    } /*
+    @include media-max(425px) {
+        overflow-x: hidden;
+    } */
+    @include media-max(767px) {
+        display: flex;
+        justify-content: space-evenly;
+        flex-direction: column;
+        flex-wrap: wrap;
+        align-content: space-around;
+    }
+}
+.navlogo {
+    width: 10%;
+    padding-left: 25px;
+    padding-right: 25px;
+    @include media-max(767px) {
+        width: 30%;
+        height: 60px;
+        padding-top: 10px;
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+}
+
+.navbar_link {
+    font-family: $police;
+    color: $rose;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 30px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    @include media-max(859px) {
+        font-size: 18px;
+    }
+    @include media-max(767px) {
+        padding-left: 10px;
+        padding-right: 10px;
+        font-size: 15px;
+    }
+}
+.navbar_link:hover {
+    color: black;
+}
