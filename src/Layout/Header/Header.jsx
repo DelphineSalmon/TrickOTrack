@@ -17,10 +17,13 @@ function Header() {
                 Mes envies tricots
             </Link>
             <Link className="navbar_link" to="/Stock">
-                Inventaires
+                Mon inventaire
             </Link>
             <Link className="navbar_link" to="/Counter">
                 Mon compteur de rangs
+            </Link>
+            <Link className="navbar_link" to="/Connexion">
+                Connexion
             </Link>
         </div>
     )
