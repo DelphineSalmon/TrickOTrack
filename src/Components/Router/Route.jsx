@@ -2,6 +2,7 @@ import React, { useEffect } from 'react'
 
 import Header from '../../Layout/Header/Header'
 import Accueil from '../../Pages/Accueil/Accueil'
+import Connexion from '../../Pages/Connexion/Connexion'
 import Footer from '../../Layout/Footer/Footer'
 import {
     HashRouter as Router,
@@ -25,7 +26,7 @@ function MyRouter() {
                 <Header />
                 <Routes>
                 <Route path="/" element={<Accueil />} />
-                   
+                <Route path="/Connexion" element={<Connexion />} />
                 </Routes>
                 <Footer />
             </Router>
