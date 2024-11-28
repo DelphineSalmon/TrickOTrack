@@ -1,0 +1,76 @@
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable.scss';
+
+.identification{
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f8feed;
+    height: 90vh;
+    padding-top: 100px;
+}
+.welcome{
+    font-family: $police;
+}
+
+.title-welcome{
+    font-size: 40px;
+}
+
+.text-welcome{
+    font-size: 20px;
+    color: $gris-clair;
+    margin-top: 30px;
+}
+
+.login{
+    font-family: $police;
+}
+
+.title-login{
+    font-size: 40px; 
+    
+}
+
+.mail-login{
+    font-size: 20px;
+    color: $gris-clair;
+    
+}
+.email{
+    padding-right: 95px;
+}
+.psd-login{
+    font-size: 20px;
+    color: $gris-clair;
+    margin-top: 15px;
+    
+}
+.password{
+    padding-right: 20px;
+}
+.no-account{
+    font-size: 20px;
+    color: $gris-clair;
+    margin-top: 15px;
+}
+
+.btn-login{
+    background-color: $rose;
+    text-decoration: none;
+    font-family:$police ;
+    color: $gris-clair;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+.link-noaccount{
+    text-decoration: none;
+    color: $rose;
+    font-weight: 400;
+}
