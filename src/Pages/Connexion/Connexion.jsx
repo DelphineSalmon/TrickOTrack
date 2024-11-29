@@ -40,7 +40,7 @@ Prêt(e) à continuer votre aventure tricot ? 💖</p>
             <form onSubmit={handleSubmit}>
                 <div className='mail-login'>
                     <label className='email' htmlFor="email">Email</label>
-                    <input
+                    <input className='input'
                         type="email"
                         id="email"
                         name="email"
@@ -51,7 +51,7 @@ Prêt(e) à continuer votre aventure tricot ? 💖</p>
                 </div>
                 <div className='psd-login'>
                     <label className='password' htmlFor="password">Mot de passe</label>
-                    <input
+                    <input className='input'
                         type="password"
                         id="password"
                         name="password"
