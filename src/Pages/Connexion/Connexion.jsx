@@ -60,10 +60,10 @@ Prêt(e) à continuer votre aventure tricot ? 💖</p>
                         required
                     />
                 </div>
-                <button className='btn-login' type="submit">S'inscrire</button>
+                <button className='btn-login' type="submit">Se connecter</button>
             </form>
             <p className='no-account'>
-                Je n'ai pas de compte <Link className='link-noaccount' to="/login">Créer un compte</Link>
+                Je n'ai pas de compte <Link className='link-noaccount' to="/Newaccount">Créer un compte</Link>
             </p>
             </div>
         </div>
