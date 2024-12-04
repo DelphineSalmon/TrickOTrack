@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import './newaccount.scss'
 
 const SignupForm = () => {
   const [formData, setFormData] = useState({
@@ -23,7 +24,8 @@ const SignupForm = () => {
   };
 
   return (
-    <div>
+    <div className="createaccount">
+        <div className="welcome">
       <h1 className="title-welcome">Bienvenue dans l'univers du tricot ! 🧶✨</h1>
       <p className="text-welcome">
         Créez votre compte dès maintenant pour :<br />
@@ -39,9 +41,10 @@ const SignupForm = () => {
         Prêt(e) à vous lancer ? Remplissez le formulaire ci-dessous pour
         commencer votre aventure tricotée ! 🖱️
       </p>
-
+      </div>
+      <div className="create">
       <form onSubmit={handleSubmit}>
-        <h2>Créer un compte</h2>
+        <h2 className='title-create'>Créer un compte</h2>
 
         <label>
           Prénom :
@@ -129,8 +132,9 @@ const SignupForm = () => {
         </label>
         <br />
 
-        <button type="submit">Créer mon compte</button>
+        <button className='btn-create' type="submit">Créer mon compte</button>
       </form>
+    </div>
     </div>
   );
 };
