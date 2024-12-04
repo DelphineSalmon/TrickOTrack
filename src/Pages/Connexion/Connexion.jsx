@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import './connexion.scss'
 
 function SignupForm() {
     const [formData, setFormData] = useState({
@@ -23,10 +24,10 @@ function SignupForm() {
 
     return (
       
-        <div>
-              <div>
-            <h1>Ravie de vous revoir ! 🧶</h1>
-            <p>Connectez-vous pour retrouver :<br/>
+        <div className='identification'>
+              <div className='welcome'>
+            <h1 className='title-welcome'>Ravie de vous revoir ! 🧶</h1>
+            <p className='text-welcome'>Connectez-vous pour retrouver :<br/>
 ✨ Vos projets en cours et terminés,<br/>
 🧵 Votre inventaire de laines et d'aiguilles,<br/>
 📋 Vos envies et idées de futurs ouvrages,<br/>
@@ -34,11 +35,12 @@ function SignupForm() {
 
 Prêt(e) à continuer votre aventure tricot ? 💖</p>
         </div>
-            <h2>Login</h2>
+        <div className='login'>
+            <h2 className='title-login'>Login</h2>
             <form onSubmit={handleSubmit}>
-                <div>
-                    <label htmlFor="email">Email</label>
-                    <input
+                <div className='mail-login'>
+                    <label className='email' htmlFor="email">Email</label>
+                    <input className='input'
                         type="email"
                         id="email"
                         name="email"
@@ -47,9 +49,9 @@ Prêt(e) à continuer votre aventure tricot ? 💖</p>
                         required
                     />
                 </div>
-                <div>
-                    <label htmlFor="password">Mot de passe</label>
-                    <input
+                <div className='psd-login'>
+                    <label className='password' htmlFor="password">Mot de passe</label>
+                    <input className='input'
                         type="password"
                         id="password"
                         name="password"
@@ -58,11 +60,12 @@ Prêt(e) à continuer votre aventure tricot ? 💖</p>
                         required
                     />
                 </div>
-                <button type="submit">S'inscrire</button>
+                <button className='btn-login' type="submit">Se connecter</button>
             </form>
-            <p>
-                Je n'ai pas de compte <Link to="/login">Créer un compte</Link>
+            <p className='no-account'>
+                Je n'ai pas de compte <Link className='link-noaccount' to="/Newaccount">Créer un compte</Link>
             </p>
+            </div>
         </div>
     );
 }
