@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import Logo from '../../assets/logo.png'
+import Dropdown from '../../Components/Dropdown'
 import './header.scss'
 
 function Header() {
@@ -9,9 +10,9 @@ function Header() {
             <Link className="navbar_link" to="/">
                 Accueil
             </Link>
-            <Link className="navbar_link" to="/Projet">
-                Mes Projets tricots
-            </Link>
+            <div className='navbar_link'>
+                    <Dropdown></Dropdown> 
+                </div>
            
             <Link className="navbar_link" to="/Desires">
                 Mes envies tricots

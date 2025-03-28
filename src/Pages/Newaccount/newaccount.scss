@@ -1,7 +1,7 @@
 @import '../../Scss/utils/mixin';
 @import '../../Scss/utils/variable.scss';
 
-.identification{
+.createaccount{
     display: flex;
     justify-content: space-evenly;
     background-color: #f8feed;
@@ -10,55 +10,20 @@
 }
 .welcome{
     font-family: $police;
+    width: 30%;
 }
-
 .title-welcome{
     font-size: 40px;
 }
-
-.text-welcome{
-    font-size: 20px;
-    color: $gris-clair;
-    margin-top: 30px;
-}
-
-.login{
+.create{
     font-family: $police;
 }
 
-.title-login{
+.title-create{
     font-size: 40px; 
     
 }
-
-.mail-login{
-    font-size: 20px;
-    color: $gris-clair;
-    display: flex;
-    
-}
-.email{
-    padding-right: 85px;
-}
-.psd-login{
-    font-size: 20px;
-    color: $gris-clair;
-    margin-top: 15px;
-    display: flex;
-   gap: 10px;
-    
-}
-.password{
-    width: 35%;
-}
-
-.no-account{
-    font-size: 20px;
-    color: $gris-clair;
-    margin-top: 15px;
-}
-
-.btn-login{
+.btn-create{
     background-color: $rose;
     text-decoration: none;
     font-family:$police ;
@@ -73,15 +38,26 @@
     border-radius: 20px;
     margin-top: 20px;
 }
-.link-noaccount{
-    text-decoration: none;
-    color: $rose;
-    font-weight: 400;
-}
 
 .input{
     height: 25px;
     width: 60%;
     border-radius: 20px;
     border: solid, 1px, $gris-clair;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.input-level{
+    height: 30px;
+    width: 60%;
+    border-radius: 20px;
+    border: solid, 1px, $gris-clair;
+    margin-bottom: 10px;
+    font-family: $police;
+    font-size: 16px;
+}
+.option{
+    font-family: $police;
+    font-size: 16px;
 }
