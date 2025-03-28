@@ -48,7 +48,7 @@ const SignupForm = () => {
 
         <label>
           Prénom :
-          <input
+          <input className='input'
             type="text"
             name="firstName"
             value={formData.firstName}
@@ -60,7 +60,7 @@ const SignupForm = () => {
 
         <label>
           Nom :
-          <input
+          <input className='input'
             type="text"
             name="lastName"
             value={formData.lastName}
@@ -72,7 +72,7 @@ const SignupForm = () => {
 
         <label>
           Ville :
-          <input
+          <input className='input'
             type="text"
             name="city"
             value={formData.city}
@@ -84,7 +84,7 @@ const SignupForm = () => {
 
         <label>
           Email :
-          <input
+          <input className='input'
             type="email"
             name="email"
             value={formData.email}
@@ -94,9 +94,9 @@ const SignupForm = () => {
         </label>
         <br />
 
-        <label>
+        <label> 
           Mot de passe :
-          <input
+          <input className='input'
             type="password"
             name="password"
             value={formData.password}
@@ -106,24 +106,24 @@ const SignupForm = () => {
         </label>
         <br />
 
-        <label>
+        <label className='title-level'>
           Niveau en tricot :
-          <select
+          <select className='input-level'
             name="knittingLevel"
             value={formData.knittingLevel}
             onChange={handleChange}
             required
           >
-            <option value="debutant">Débutant</option>
-            <option value="intermediaire">Intermédiaire</option>
-            <option value="expert">Expert</option>
+            <option className="option" value="debutant">Débutant</option>
+            <option className="option" value="intermediaire">Intermédiaire</option>
+            <option className="option" value="expert">Expert</option>
           </select>
         </label>
         <br />
 
         <label>
-          Lien Instagram :
-          <input
+        Instagram :
+          <input className='input'
             type="url"
             name="instagramLink"
             value={formData.instagramLink}

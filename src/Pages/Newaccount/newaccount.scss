@@ -38,3 +38,26 @@
     border-radius: 20px;
     margin-top: 20px;
 }
+
+.input{
+    height: 25px;
+    width: 60%;
+    border-radius: 20px;
+    border: solid, 1px, $gris-clair;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+.input-level{
+    height: 30px;
+    width: 60%;
+    border-radius: 20px;
+    border: solid, 1px, $gris-clair;
+    margin-bottom: 10px;
+    font-family: $police;
+    font-size: 16px;
+}
+.option{
+    font-family: $police;
+    font-size: 16px;
+}
