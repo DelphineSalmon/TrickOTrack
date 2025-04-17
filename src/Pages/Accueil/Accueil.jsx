@@ -14,9 +14,11 @@ function Accueil() {
 ✨ Gérez votre inventaire : tenez à jour votre stock de laines, aiguilles et accessoires pour ne jamais manquer de matériel.<br/>
 ✨ Compteur de rang : un outil simple et efficace pour ne jamais perdre le fil de vos projets !<br/>
 ✨ Notez vos envies : ajoutez facilement vos futurs projets à réaliser et commencez à planifier dès maintenant vos prochaines créations !<br/>
+✨ Trouvez une mercerie proche de chez vous  : 🗺️ avec une carte interactive qui vous permet de localiser les boutiques de laine et merceries les plus proches.<br/>
+✨ Apprendre de nouvelles techniques 📺 :  accédez à une sélection de tutoriels vidéo YouTube pour perfectionner votre tricot.<br/>
 
 Que vous réalisez des accessoires, des vêtements ou que vous rêvez de nouvelles idées, ce site vous accompagne dans chaque étape de votre passion. Organisez, inspirez-vous et créez à votre rythme ! </h3>
-<Link className="boutonprojet" to="/Projet">
+<Link className="boutonprojet" to="/InProgress">
                     Commencer un nouveau Projet ! 
                 </Link>
                 <div className="btn-group my-5"></div>

@@ -10,19 +10,19 @@ export default function KnittingProjectsMenu() {
         className="navbar_link dropdown_button" 
         onClick={() => setIsOpen(!isOpen)}
       >
-        Mes Projets tricots ▼
+        Mon inventaire ▼
       </button>
 
       {isOpen && (
         <ul className="dropdown_menu">
-          <li>
-            <Link to="/Wips" className="dropdown_item" >
-              Projets en cours
+             <li>
+            <Link to="/Needle" className="dropdown_item" >
+              Mes aiguilles
             </Link>
           </li>
           <li>
-            <Link to="/Finish" className="dropdown_item" >
-              Projets terminés
+            <Link to="/Stash" className="dropdown_item" >
+              Mon stash de laine
             </Link>
           </li>
         </ul>
