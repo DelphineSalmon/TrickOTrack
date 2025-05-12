@@ -18,6 +18,7 @@ import {
     Route,
     useLocation,
 } from 'react-router-dom'
+import KnitlistPage from '../../Pages/Projets/Knitlist'
 
 function ScrollToTop() {
     const chemin = useLocation()
@@ -34,7 +35,7 @@ function MyRouter() {
                 <Header />
                 <Routes>
                 <Route path="/" element={<Accueil />} />
-                <Route path="/Knitlist" element={<Knitlist/>}/>
+                <Route path="/Knitlist" element={<KnitlistPage/>}/>
                 <Route path="/InProgress" element={<InProgress/>}/>
                 <Route path="/Finish" element={<Finish/>}/>
                 <Route path="/Needle" element={<Needle/>}/>

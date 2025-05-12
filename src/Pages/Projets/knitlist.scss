@@ -1,0 +1,12 @@
+@import '../../Scss/utils/variable.scss';
+
+
+.containercards {
+    background-color: $color-beige;
+    border-radius: 40px;
+    width: 85%;
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    margin: 0 auto;
+}
