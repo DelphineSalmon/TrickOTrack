@@ -1,6 +1,6 @@
 @import '../../Scss/utils/variable.scss';
 
-.knit-list-page{
+.inprogress-page{
     display: flex;
     justify-content: space-evenly;
     background-color: #f8feed;
@@ -14,7 +14,7 @@
     margin-left: 200px;
     font-size: 25px;
 }
-.text-kintlist{
+.text-inprogress{
     font-family: $police;
     color: $gris-clair;
     margin-left: 200px;
