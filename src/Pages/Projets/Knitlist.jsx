@@ -13,13 +13,13 @@ function KnitlistPage() {
                 <h2 className="second-title">Le fil de tes envies</h2>
                 <p className='text-kintlist'>Dans cet espace, chaque idée a sa place : un gilet repéré au détour d’un fil Instagram, un bonnet doux à offrir, une couverture que l’on rêve de monter maille après maille. Ici, tu peux enregistrer tes projets futurs, noter les fils à utiliser, et garder le fil de tes inspirations. Une liste qui t’accompagne au rythme de tes aiguilles.</p>
 
-                <Link className="boutonprojet" to="/Projet">
+                <Link className="boutonprojet" to="/Newdesire">
                     Ajouter une envie 
                 </Link>
 
                 <div className="containercards">
                     <div className="cards">
-                        {KnitlistData.map((projet) => (
+                        {KnitlistData.filter(projet=>projet.statut==="envie").map((projet) => (
                             <Card key={projet.id} projet={projet} />
                         ))}
                     </div>

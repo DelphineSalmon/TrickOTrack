@@ -17,7 +17,7 @@ function Finish() {
                 </Link>
                 <div className="containercards">
                     <div className="cards">
-                        {FinishProject.map((projet) => (
+                        {FinishProject.filter(projet=>projet.statut==="fini").map((projet) => (
                             <Card key={projet.id} projet={projet} />
                         ))}
                     </div>

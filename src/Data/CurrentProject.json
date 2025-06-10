@@ -15,7 +15,8 @@
         "échantillon": true,
         "langue":"Anglais",
         "difficulté":"Intermédiare",
-        "note":""
+        "note":"",
+        "statut": "en cours"
 
         
 
@@ -36,7 +37,10 @@
         "échantillon": true,
         "langue":"Anglais,Français",
         "difficulté":"Intermédiare",
-        "note":""
+        "note":"",
+        "statut": "en cours"
+        
+
 
       
 		
@@ -57,7 +61,8 @@
         "échantillon": true,
         "langue":"Anglais, Français",
         "difficulté":"Intermédiare",
-        "note":""
+        "note":"",
+        "statut": "en cours"
 
         
 		
@@ -78,7 +83,8 @@
         "échantillon": true,
         "langue":"Anglais, Français",
         "difficulté":"Débutant",
-        "note":""
+        "note":"",
+        "statut": "en cours"
 
         
 	},
@@ -98,7 +104,8 @@
         "échantillon": true,
         "langue":"Anglais, Français",
         "difficulté":"Intermédiare",
-        "note":""
+        "note":"",
+        "statut": "en cours"
 
         
 	},
@@ -118,7 +125,8 @@
         "échantillon": true,
         "langue":"Anglais, Français",
         "difficulté":"Débutant",
-        "note":""
+        "note":"",
+        "statut": "en cours"
        
 		
 	}

@@ -11,7 +11,8 @@
         "Langue":"Anglais",
         "Difficulté":"Intermédiare",
 
-        "havePatron":true
+        "havePatron":true,
+		"statut": "envie"
 
 	},
     {
@@ -26,7 +27,8 @@
         "Langue":"Anglais,Français",
         "Difficulté":"Intermédiare",
 
-        "havePatron":true
+        "havePatron":true,
+		"statut": "envie"
 		
 	},
     {
@@ -41,7 +43,8 @@
         "Langue":"Anglais, Français",
         "Difficulté":"Intermédiare",
 
-        "havePatron":true
+        "havePatron":true,
+		"statut": "envie"
 		
 	},
     {
@@ -56,11 +59,12 @@
         "Langue":"Anglais, Français",
         "Difficulté":"Débutant",
 
-        "havePatron":true
+        "havePatron":true,
+		"statut": "envie"
 		
 	},
 	{
-		"id": "3",
+		"id": "5",
 		"title": "Théodore Wrap",
 		"cover": "http://www.image-heberg.fr/files/17448835561827395545.png",
 		"pictures": "http://www.image-heberg.fr/files/1744883585914420603.png",
@@ -71,11 +75,12 @@
         "Langue":"Anglais, Français",
         "Difficulté":"Intermédiare",
 
-        "havePatron":true
+        "havePatron":true,
+		"statut": "envie"
 		
 	},
     {
-		"id": "4",
+		"id": "6",
 		"title": "Rosa",
 		"cover": "http://www.image-heberg.fr/files/17448846413422693056.png",
 		"pictures": "http://www.image-heberg.fr/files/17448846653789862888.png",
@@ -86,7 +91,8 @@
         "Langue":"Anglais, Français",
         "Difficulté":"Débutant",
 
-        "havePatron":true
+        "havePatron":true,
+		"statut": "envie"
 		
 	}
     

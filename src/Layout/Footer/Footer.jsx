@@ -1,11 +1,11 @@
-import LogoFooter from '../../assets/logo.png'
+
 import './footer.scss'
 
 
 function Footer() {
     return (
         <div className="footer">
-            <img className="footerlogo" src={LogoFooter} alt="Logo Footer" />
+            <h1 className='navlogo '>Tric O Track</h1>
             <div className="copyfooter">
                 <p className="copyright">
                     Designed and built by Delphine Barrabes Salmon

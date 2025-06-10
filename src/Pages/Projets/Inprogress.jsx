@@ -14,13 +14,13 @@ function InProgress() {
 
 Entre organisation et création, cette page est mon fil conducteur dans l’univers infini du tricot..</p>
                
-<Link className="boutonprojet" to="/Projet">
+<Link className="boutonprojet" to="/Currentproject">
                     Ajouter un projet 
                 </Link>
 
                 <div className="containercards">
                     <div className="cards">
-                        {CurrentProject.map((projet) => (
+                        {CurrentProject.filter(projet=>projet.statut==="en cours").map((projet) => (
                             <Card key={projet.id} projet={projet} />
                         ))}
                     </div>
