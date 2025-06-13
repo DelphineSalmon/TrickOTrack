@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Card from '../../Components/Card/Card'
-import CurrentProject from '../../Data/CurrentProject.json'
+import CurrentProject from '../../Data/KnitProject.json'
 import'./Inprogress.scss'
 
 function InProgress() {

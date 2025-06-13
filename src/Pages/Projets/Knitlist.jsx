@@ -1,7 +1,7 @@
 
 import { Link } from 'react-router-dom'
 import Card from '../../Components/Card/Card'
-import KnitlistData from '../../Data/KnitList.json'
+import KnitlistData from '../../Data/KnitProject.json'
 import'./knitlist.scss'
 
 function KnitlistPage() {

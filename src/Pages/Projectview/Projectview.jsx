@@ -1,5 +1,5 @@
 import { useParams } from 'react-router-dom'
-import CurrentProject from '../../Data/CurrentProject.json'
+import CurrentProject from '../../Data/KnitProject.json'
 import { Link } from 'react-router-dom'
 
 

@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom'
 import Card from '../../Components/Card/Card'
-import FinishProject from '../../Data/FinishProject.json'
+import FinishProject from '../../Data/KnitProject.json'
 import'./Finish.scss'
 
 function Finish() {
