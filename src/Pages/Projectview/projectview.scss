@@ -1,0 +1,70 @@
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable.scss';
+
+
+.project{
+   
+    background-color: #fefaf2;
+    height: 90vh;
+    padding-top: 20px;
+}
+
+.titleproject{
+    font-size: 40px;
+    font-family: $police-petit-titre;
+    display: flex;
+    justify-content: space-evenly;
+    margin-bottom: 50px;
+    font-weight: 120;
+    
+}
+
+.containerproject{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.containerdescription{
+    font-family: $police;
+    font-size: 20px;
+    color: $gris-clair;
+}
+
+.containerlink{
+    display: flex;
+    justify-content: flex-end;
+    gap: 25px;
+    margin-top: 40px;
+    padding-right: 200px;
+}
+.projetlink1{
+    background-color: $rose;
+    text-decoration: none;
+    font-family:$police ;
+    color: $gris-clair;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}
+
+.projetlink2{
+    background-color: $rose;
+    text-decoration: none;
+    font-family:$police ;
+    color: $gris-clair;
+    border: none;
+    cursor: pointer;
+    font-size: 20px;
+    padding-top: 8px;
+    padding-left: 15px;
+    padding-bottom: 8px;
+    padding-right: 15px;
+    border-radius: 20px;
+    margin-top: 20px;
+}

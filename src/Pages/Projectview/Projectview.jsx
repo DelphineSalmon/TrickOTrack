@@ -1,6 +1,7 @@
 import { useParams } from 'react-router-dom'
 import CurrentProject from '../../Data/KnitProject.json'
 import { Link } from 'react-router-dom'
+import'./projectview.scss'
 
 
 
@@ -15,7 +16,7 @@ function Projectview() {
         <div className="project">
             <h1 className="titleproject">{projet.title}</h1>
             <div className="deco-projet"></div>
-            <div className="containerwork">
+            <div className="containerproject">
                 <img
                     className="img-work"
                     src={projet.pictures}
@@ -44,7 +45,7 @@ function Projectview() {
                         <p className="échantillons">{projet.échantillon}</p>
                     </div>
                     <div>
-                        <p className="langue">{projet.langues}</p>
+                        <p className="langue">{projet.langue}</p>
                     </div>
                     <div>
                         <p className="difficulté">{projet.difficulté}</p>
@@ -56,17 +57,20 @@ function Projectview() {
                     
                 </div>
             </div>
-            <div>
-                <Link className="projetlink" to="/Currentproject">
-                    Modifier
-                </Link>
+            <div className='containerlink'>
+                <div>
+                    <Link className="projetlink1" to="/Currentproject">
+                     Modifier
+                 </Link>
+                </div>
+                <div>
+                    <Link className="projetlink2" to="/Projet">
+                        Enregistrer
+                    </Link>
+                </div>
             </div>
-            <div>
-                <Link className="projetlink" to="/Projet">
-                    Enregistrer
-                </Link>
             </div>
-        </div>
+        
     )
 }
 

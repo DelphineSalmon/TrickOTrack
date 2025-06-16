@@ -181,6 +181,28 @@ const Currentproject = () => {
           </label>
           <br />
 
+          <label className="title-statut">
+            Statut:
+            <select
+              className="input-statut"
+              name="statut"
+              value={formData.statut}
+              onChange={handleChange}
+              required
+            >
+              <option className="option" value="envie">
+                Envie
+              </option>
+              <option className="option" value="encours">
+                En cours
+              </option>
+              <option className="option" value="fini">
+                Terminé
+              </option>
+            </select>
+          </label>
+          <br/>
+
           <label>
             Notes :
             <input
