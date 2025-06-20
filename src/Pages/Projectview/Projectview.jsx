@@ -18,40 +18,40 @@ function Projectview() {
             <div className="deco-projet"></div>
             <div className="containerproject">
                 <img
-                    className="img-work"
+                    className="img-projet"
                     src={projet.pictures}
                     alt={projet.title}
                 />
 
                 <div className="containerdescription">
                     <div>
-                        <p className="designer">
-                            {projet.designer}
+                        <p  className="designer"> Designer:
+                             {projet.designer}
                         </p>
                     </div>
                     <div>
-                        <p className="categorie">{projet.categorie}</p>
+                        <p className="categorie"> Catégorie: {projet.categorie}</p>
                     </div>
                     <div>
-                        <p className="fil">{projet.fil}</p>
+                        <p className="fil"> Fil: {projet.fil}</p>
                     </div>
                     <div>
-                        <p className="aiguilles">{projet.aiguilles}</p>
+                        <p className="aiguilles"> Aiguilles: {projet.aiguilles}</p>
                     </div>
                     <div>
-                        <p className="size">{projet.size}</p>
+                        <p className="size"> Tailles: {projet.size}</p>
                     </div>
                     <div>
-                        <p className="échantillons">{projet.échantillon}</p>
+                        <p className="échantillons"> Echantillon: {projet.échantillon}</p>
                     </div>
                     <div>
-                        <p className="langue">{projet.langue}</p>
+                        <p className="langue"> Langue: {projet.langue}</p>
                     </div>
                     <div>
-                        <p className="difficulté">{projet.difficulté}</p>
+                        <p className="difficulté"> Difficulté: {projet.difficulté}</p>
                     </div>
                     <div>
-                        <p className="note">{projet.note}</p>
+                        <p className="note"> Notes: {projet.note}</p>
                     </div>
 
                     
@@ -64,7 +64,7 @@ function Projectview() {
                  </Link>
                 </div>
                 <div>
-                    <Link className="projetlink2" to="/Projet">
+                    <Link className="projetlink2" to="/InProgress">
                         Enregistrer
                     </Link>
                 </div>

@@ -23,7 +23,11 @@
     display: flex;
     justify-content: space-evenly;
 }
-
+.img-projet{
+    border-radius: 35px;
+    width: 25%;
+    object-fit: cover;
+}
 .containerdescription{
     font-family: $police;
     font-size: 20px;

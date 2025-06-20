@@ -3,23 +3,26 @@
 
 .identification{
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     background-color: #fefaf2;
-    height: 90vh;
+    height: 58vh;
     padding-top: 100px;
 }
-.welcome{
+.welcome-connex{
     font-family: $police;
+    width: 45%;
 }
 
-.title-welcome{
+.title-connex{
     font-size: 40px;
+    width: 50%;
 }
 
-.text-welcome{
+.text-connex{
     font-size: 20px;
     color: $gris-clair;
     margin-top: 30px;
+    width: 50%;
 }
 
 .login{

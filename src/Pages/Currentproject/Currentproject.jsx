@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import'./currentproject.scss'
 
 const Currentproject = () => {
   const [formData, setFormData] = useState({
@@ -43,9 +44,11 @@ const Currentproject = () => {
         <h1 className="title-welcome">Enregistrer un nouveaux projet ! </h1>
       </div>
 
-      <div className="create">
+      <div className="create-new">
         <form onSubmit={handleSubmit} encType="multipart/form-data">
-          <label>
+
+        <div className="ligne-formulaire">
+          <label className="title-input">
             Titre :
             <input
               className="input"
@@ -57,8 +60,10 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
-          <label>
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Designer :
             <input
               className="input"
@@ -70,8 +75,10 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
-          <label>
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Catégorie :
             <input
               className="input"
@@ -83,8 +90,10 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
-          <label>
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Fil :
             <input
               className="input"
@@ -96,8 +105,10 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
-          <label>
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Langue :
             <input
               className="input"
@@ -109,8 +120,10 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
-          <label>
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Aiguilles :
             <input
               className="input"
@@ -122,8 +135,10 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
-          <label>
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Taille :
             <input
               className="input"
@@ -135,8 +150,10 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
-          <label className="title-level">
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Difficulté :
             <select
               className="input-level"
@@ -157,10 +174,13 @@ const Currentproject = () => {
             </select>
           </label>
           <br />
+          </div>
 
-          <label>
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Echantillon ?
             <input
+            className="input-check"
               type="checkbox"
               name="échantillon"
               checked={formData.échantillon}
@@ -168,11 +188,13 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
-          <label>
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Ajouter une image :
             <input
-              className="input"
+              className="input-img"
               type="file"
               name="image"
               accept="image/*"
@@ -180,11 +202,13 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
-          <label className="title-statut">
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Statut:
             <select
-              className="input-statut"
+              className="input-level"
               name="statut"
               value={formData.statut}
               onChange={handleChange}
@@ -202,8 +226,10 @@ const Currentproject = () => {
             </select>
           </label>
           <br/>
+          </div>
 
-          <label>
+          <div className="ligne-formulaire">
+          <label className="title-input">
             Notes :
             <input
               className="input"
@@ -215,10 +241,11 @@ const Currentproject = () => {
             />
           </label>
           <br />
+          </div>
 
           {preview && (
             <div style={{ margin: "10px 0" }}>
-              <p>Aperçu :</p>
+              <p className="title-input">Aperçu :</p>
               <img
                 src={preview}
                 alt="aperçu"

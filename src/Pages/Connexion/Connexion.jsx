@@ -25,9 +25,9 @@ function SignupForm() {
     return (
       
         <div className='identification'>
-              <div className='welcome'>
-            <h1 className='title-welcome'>Ravie de vous revoir ! 🧶</h1>
-            <p className='text-welcome'>Connectez-vous pour retrouver :<br/>
+              <div className='welcome-connex'>
+            <h1 className='title-connex'>Ravie de vous revoir ! 🧶</h1>
+            <p className='text-connex'>Connectez-vous pour retrouver :<br/>
 ✨ Vos projets en cours et terminés,<br/>
 🧵 Votre inventaire de laines et d'aiguilles,<br/>
 📋 Vos envies et idées de futurs ouvrages,<br/>
