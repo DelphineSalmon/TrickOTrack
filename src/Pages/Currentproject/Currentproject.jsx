@@ -44,7 +44,7 @@ const Currentproject = () => {
         <h1 className="title-welcome">Enregistrer un nouveaux projet ! </h1>
       </div>
 
-      <div className="create-new">
+      <div className="create">
         <form onSubmit={handleSubmit} encType="multipart/form-data">
 
         <div className="ligne-formulaire">

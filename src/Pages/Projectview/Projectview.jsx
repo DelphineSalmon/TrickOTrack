@@ -1,17 +1,29 @@
+import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'
-import CurrentProject from '../../Data/KnitProject.json'
+import  {getProjectById} from '../../lib/common.js'
 import { Link } from 'react-router-dom'
 import'./projectview.scss'
 
 
 
 function Projectview() {
+    const [projet, setProject] = useState(null);
+
     const { id } = useParams()
-    const projets = CurrentProject.filter((value) => value.id === id)
-    if (projets.length === 0) {
-        //return <Error />
+      useEffect(() => {
+        async function getProjectsList() {
+          const data = await  getProjectById(id);
+          if (data) {
+            setProject(data);
+         
+        }
+        }
+        getProjectsList();
+      }, [id]);
+      
+     if (!projet) {
+        return <div>Chargement du projet...</div>; // ou ton composant <Loader />
     }
-    const projet = projets[0]
     return (
         <div className="project">
             <h1 className="titleproject">{projet.title}</h1>

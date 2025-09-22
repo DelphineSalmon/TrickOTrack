@@ -3,7 +3,7 @@
 
 .createdesire{
     background-color: #fefaf2;
-    height: 90vh;
+    height: 110vh;
     padding-top: 30px;
 }
 
@@ -16,24 +16,7 @@
     font-weight: 120;
 }
 
-.create-new{
-    width: 70%;
 
-}
-
-.input{
-    max-width: 500px; 
-    display: flex;
-    flex-direction: column;
-   
-}
-.title-input{
-    font-family: $police-petit-titre;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
 input[type="checkbox"]:checked{
     cursor: pointer;
     accent-color: $rose;

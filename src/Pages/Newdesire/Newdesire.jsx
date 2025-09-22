@@ -127,6 +127,28 @@ const Newdesire = () => {
           </label>
           <br />
 
+          <label className="title-input">
+            Statut:
+            <select
+              className="input-level"
+              name="statut"
+              value={formData.statut}
+              onChange={handleChange}
+              required
+            >
+              <option className="option" value="envie">
+                Envie
+              </option>
+              <option className="option" value="encours">
+                En cours
+              </option>
+              <option className="option" value="fini">
+                Terminé
+              </option>
+            </select>
+          </label>
+          <br />
+
           <label>
             Ajouter une image :
             <input
