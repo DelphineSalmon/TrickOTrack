@@ -5,13 +5,15 @@ import Accueil from '../../Pages/Accueil/Accueil'
 import Connexion from '../../Pages/Connexion/Connexion'
 import Footer from '../../Layout/Footer/Footer'
 import Newaccount from '../../Pages/Newaccount/Newaccount'
-import Knitlist from '../../Pages/Projets/Knitlist'
 import InProgress from '../../Pages/Projets/Inprogress'
 import Needle from '../../Pages/Inventaire/Aiguilles'
 import Stash from '../../Pages/Inventaire/Stash'
 import Finish from '../../Pages/Projets/Finish'
 import Map from '../../Pages/Mercerie/Map'
 import Video from '../../Pages/YouTube/Tutovideo'
+import Newdesire from '../../Pages/Newdesire/Newdesire'
+import Currentproject from '../../Pages/Currentproject/Currentproject'
+import Projectview from '../../Pages/Projectview/Projectview'
 import {
     HashRouter as Router,
     Routes,
@@ -44,6 +46,9 @@ function MyRouter() {
                 <Route path="/Video" element={<Video/>}/>
                 <Route path="/Connexion" element={<Connexion />} />
                 <Route path="/Newaccount" element={<Newaccount/>}/>
+                <Route path="/Newdesire" element={<Newdesire/>}/>
+                <Route path="/Currentproject" element={<Currentproject/>}/>
+                <Route path="/Projectview/:id" element={<Projectview/>}/>
                 </Routes>
                 <Footer />
             </Router>

@@ -27,7 +27,7 @@ const SignupForm = () => {
     <div className="createaccount">
         <div className="welcome">
       <h1 className="title-welcome">Bienvenue dans l'univers du tricot ! 🧶✨</h1>
-      <p className="text-welcome">
+      <p className="text-new-account">
         Créez votre compte dès maintenant pour :<br />
         ✔️ Enregistrer vos projets terminés et en cours 🧵<br />
         ✔️ Suivre votre inventaire de laine et d'aiguilles 🧺<br />

@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import Logo from '../../assets/logo.png'
 import Dropdown1 from '../../Components/Router/DropdownProjet'
 import Dropdown2 from '../../Components/DropdownInventaire'
 import './header.scss'
@@ -7,7 +6,7 @@ import './header.scss'
 function Header() {
     return (
         <div className="navbar">
-             <img className="navlogo" src={Logo} alt="Logo" />
+             <h1 className='navlogo '>Tric O Track</h1>
             <Link className="navbar_link" to="/">
                 Accueil
             </Link>

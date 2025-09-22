@@ -1,9 +1,32 @@
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom'
 import Card from '../../Components/Card/Card'
-import CurrentProject from '../../Data/CurrentProject.json'
+import  {getProject} from '../../lib/common.js'
 import'./Inprogress.scss'
 
 function InProgress() {
+    const [project, setProject] = useState(null);
+  const [loading, setLoading] = useState(true);
+  // eslint-disable-next-line max-len
+  const displayProject = () => (
+    project ? project
+    .filter(project=>project.statut==="en cours")
+    .map(project => <Card key={project.id} projet={project} />) : <h1>Vide</h1>
+);
+
+
+  useEffect(() => {
+    async function getProjectsList() {
+      const data = await getProject();
+      if (data) {
+      
+        setProject(data);
+        setLoading(false);
+     
+    }
+    }
+    getProjectsList();
+  }, []);
     return (
         <div className="inprogress-page">
             <div className="title-animation">
@@ -14,15 +37,14 @@ function InProgress() {
 
 Entre organisation et création, cette page est mon fil conducteur dans l’univers infini du tricot..</p>
                
-<Link className="boutonprojet" to="/Projet">
+<Link className="boutonprojet" to="/Currentproject">
                     Ajouter un projet 
                 </Link>
 
-                <div className="containercards">
+               <div className="containercards">
                     <div className="cards">
-                        {CurrentProject.map((projet) => (
-                            <Card key={projet.id} projet={projet} />
-                        ))}
+                         {loading ? <h1>Chargement</h1> :displayProject()}
+                      
                     </div>
                 </div>
                 <div className="btn-group my-5"></div>

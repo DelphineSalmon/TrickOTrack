@@ -1,0 +1,38 @@
+@import '../../Scss/utils/mixin';
+@import '../../Scss/utils/variable.scss';
+
+.createdesire{
+    background-color: #fefaf2;
+    height: 110vh;
+    padding-top: 30px;
+}
+
+.title-welcome{
+    margin-left: 80px;
+    width: 100%;
+    font-size: 40px;
+    font-family: $police-petit-titre;
+    margin-bottom: 50px;
+    font-weight: 120;
+}
+
+
+input[type="checkbox"]:checked{
+    cursor: pointer;
+    accent-color: $rose;
+    transition: all 0.5s ease;   
+}
+ 
+.input-check{
+    width:25px;
+    height:25px;
+}
+.input-img{
+    padding-top: 15px;
+    padding-bottom: 15px;
+    color: $rose;
+    font-family: $police-petit-titre;
+    font-size: 16px;
+    padding-left: 0px;
+}
+   
