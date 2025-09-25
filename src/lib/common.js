@@ -43,3 +43,17 @@ export async function getProjectById(id) {
   }
 
 }
+
+export async function deleteProject(id) {
+  try {
+    await axios.delete(`${API_ROUTES.PROJECT}/${id}`, {
+      /*headers: {
+        Authorization: `Bearer ${localStorage.getItem('token')}`,
+      },*/
+    });
+    return true;
+  } catch (err) {
+    console.error(err);
+    return false;
+  }
+}

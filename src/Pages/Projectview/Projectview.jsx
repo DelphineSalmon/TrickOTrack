@@ -1,10 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams } from 'react-router-dom'
-import  {getProjectById} from '../../lib/common.js'
+import  {deleteProject, getProjectById} from '../../lib/common.js'
 import { Link } from 'react-router-dom'
 import'./projectview.scss'
 
-
+ 
 
 function Projectview() {
     const [projet, setProject] = useState(null);
@@ -20,10 +20,24 @@ function Projectview() {
         }
         getProjectsList();
       }, [id]);
-      
+
      if (!projet) {
         return <div>Chargement du projet...</div>; // ou ton composant <Loader />
     }
+// logique suppression données
+    const onDelete = async (e) => {
+    if (e.key && e.key !== 'Enter') {
+      return;
+    }
+    // eslint-disable-next-line no-restricted-globals
+    const check = confirm('Etes vous sûr de vouloir supprimer ce projet ?');
+    if (check) {
+      const del = await deleteProject(id);
+      if (del) {
+        //setBook((oldValue) => ({ ...oldValue, delete: true }));
+      }
+    }
+  };
     return (
         <div className="project">
             <h1 className="titleproject">{projet.title}</h1>
@@ -80,6 +94,12 @@ function Projectview() {
                         Enregistrer
                     </Link>
                 </div>
+                <div>
+                    <Link className="projetlink2" to="/" onKeyUp={onDelete} onClick={onDelete}>
+                        ⚠️ Supprimer le projet
+                    </Link>
+                </div>
+               
             </div>
             </div>
         
